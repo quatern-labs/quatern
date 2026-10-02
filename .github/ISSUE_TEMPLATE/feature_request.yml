@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an idea or improvement.
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what's getting in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like Quatern to do?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Robot and stack context
+      description: Robot, simulator, ROS version, controllers, or anything else relevant.

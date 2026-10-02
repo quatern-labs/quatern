@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://quatern.co/docs
+    about: Guides and reference for using Quatern.
+  - name: Examples
+    url: https://github.com/quatern-labs/quatern-examples
+    about: Example projects to start from.
+  - name: Company pilots
+    url: mailto:pilots@quatern.co
+    about: Running a pilot with your team? Email pilots@quatern.co.

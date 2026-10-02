@@ -1,0 +1,83 @@
+name: Bug report
+description: Something isn't working as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please don't report security vulnerabilities here; see [SECURITY.md](https://github.com/quatern-labs/quatern/blob/main/SECURITY.md).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `quatern ...`
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Quatern version
+      description: Output of `quatern --version`.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS and Python version
+      placeholder: e.g. Ubuntu 24.04, Python 3.12
+    validations:
+      required: true
+  - type: input
+    id: robot
+    attributes:
+      label: Robot
+      placeholder: e.g. TurtleBot 4, custom 4-wheel rover, custom ROS 2 arm
+  - type: dropdown
+    id: target
+    attributes:
+      label: Target
+      options:
+        - Simulator
+        - Hardware
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output
+      description: Logs or error messages. This is automatically formatted as code.
+      render: shell
+  - type: input
+    id: run-record
+    attributes:
+      label: Run record ID
+      description: If the run produced one.
+  - type: checkboxes
+    id: redaction
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed API keys, tokens, and private data
+          required: true
